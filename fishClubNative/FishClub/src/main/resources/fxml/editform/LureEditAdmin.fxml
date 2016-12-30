@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="271.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.editcontroller.LureEditController">
+   <children>
+      <TextField fx:id="lureName" layoutX="61.0" layoutY="86.0" />
+      <TextField fx:id="lureCountHooks" layoutX="61.0" layoutY="151.0" />
+      <TextField fx:id="lureWeight" layoutX="61.0" layoutY="217.0" />
+      <TextField fx:id="lureDepth" layoutX="61.0" layoutY="278.0" />
+      <Label layoutX="61.0" layoutY="69.0" text="Название наживки">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="134.0" text="Количество крючков">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="200.0" text="Вес">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="261.0" text="Глубина погружения">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="lureIsLive" layoutX="64.0" layoutY="321.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="142.0" text="Не живая наживка">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </CheckBox>
+      <Text fx:id="headerLureEdit" layoutX="28.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Окно добавления наживки">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button defaultButton="true" layoutX="43.0" layoutY="358.0" mnemonicParsing="false" onAction="#okAction" text="Завершить" />
+      <Button layoutX="167.0" layoutY="358.0" mnemonicParsing="false" onAction="#closeAction" text="Закрыть" />
+   </children>
+</Pane>
